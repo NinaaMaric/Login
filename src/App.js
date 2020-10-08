@@ -24,7 +24,7 @@ function App() {
       });
     } else {
       console.log("details do not match");
-      setError("Details do not match")
+      setError("Details do not match!")
     }
   };
 
@@ -38,7 +38,7 @@ function App() {
       {user.email != "" ? (
         <div className="welcome">
           <h2>
-            Welcome, <span> {user.name} </span>
+            Welcome, <span> {user.name} </span> !
           </h2>
           <button onClick={Logout}>Logout</button>
         </div>

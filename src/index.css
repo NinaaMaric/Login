@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: montserrat, sans-serif;
+  font-family:  Verdana, Geneva, Tahoma, sans-serif;
 }
 input, button{
   appearance: none;
@@ -22,7 +22,6 @@ input, button{
 form{
   display: block;
   position: relative;
-
 }
 
 form:after{
@@ -36,6 +35,7 @@ form:after{
   z-index: 1;
   background-image: linear-gradient(to bottom right, #ffce00, #fe4880);
 }
+
 form .form-inner{
   position: relative;
   display: block;
@@ -43,12 +43,14 @@ form .form-inner{
   padding: 30px;
   z-index: 2;
 }
+
 form .form-inner h2{
   color: #8888;
   font-size: 28px;
   font-weight: 500;
   margin-bottom: 30px;
 }
+
 form .form-inner .form-group{
   display: block;
   width: 300px;
@@ -62,6 +64,7 @@ form .form-inner .form-group{
   margin-bottom: 5px;
   transition: 0.4ms;
 }
+
 .form-inner .form-group:focus-within label{
   color: #fe4880;
 }
@@ -69,11 +72,13 @@ form .form-inner .form-group{
 form .form-inner .form-group input{
   display: block;
   width: 100%;
+  height: 42px;
   padding: 10px 15px;
   background-color: #f8f8f8;
   border-radius: 8px;
   transition: 0.4s;
 }
+
  form .form-inner .form-group input:focus{
    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
  }
@@ -109,4 +114,11 @@ form .form-inner .form-group input{
   .welcome h2 span{
     color: #fe4880;
     font-weight: 700;
+  }
+
+  .error{
+    padding-bottom: 10px;
+    color: tomato;
+    font-size: 14px;
+    font-style: italic;
   }
